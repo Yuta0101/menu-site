@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!-- Başlık -->
+     <img src="/images/AAA.gif" class="gif-float">
+
+    <h1 class="heading">食全食美早午餐店</h1>
+    <p class="contact-text">📞 訂購專線：0919-706-383</p>
+    <!-- Butonlar -->
+    <div id="buttons" class="d-flex justify-content-center gap-3 my-4">
+        <!-- <button class="btn btn-outline-dark">Hepsi</button> -->
+    </div>
+    <!-- Menü Listesi -->
+    <div id="menu-list">
+        <!-- Kart -->
+        <!-- <a id="card" href="#" class="d-flex flex-column flex-md-row text-decoration-none text-dark gap-3">
+            <img class="rounded shadow img-fluid" src="/img/item-1.jpeg" />
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h5>Süzme Pankek</h5>
+                    <p class="text-success fw-bold">250₺</p>
+                </div>
+                <p class="lead">
+                    Sütün lezzeti buttermilk pankeklerde! Yumuşacık bir dokuya
+                    sahip süzme pankeklerimizle gününüze tat katın.
+                </p>
+            </div>
+        </a> -->
+        <!-- Kart -->
+    </div>
+    <script src="main.js" type="module"></script>
+    <canvas id="snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: -1;"></canvas>
+<script src="./scripts/snow.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/mouse-firework@latest/dist/index.umd.js"></script>
+<script>
+  firework({
+    excludeElements: [],
+    particles: [
+      {
+        shape: "circle",
+        move: "emit",
+        easing: "easeOutExpo",
+        colors: [
+          "rgba(255,182,185,0.9)",
+          "rgba(250,227,217,0.9)",
+          "rgba(187,222,214,0.9)",
+          "rgba(138,198,209,0.9)"
+        ],
+        number: 30,
+        duration: [1200, 1800],
+        shapeOptions: {
+          radius: [16, 32]
+        }
+      }
+    ]
+  });
+</script>
+
+
+</body>
+</html>

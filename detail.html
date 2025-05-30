@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>餐點詳細資訊</title>
+
+  <!-- CSS 檔案 -->
+  <link rel="stylesheet" href="/style.css" /> <!-- 共用背景圖 -->
+  <link rel="stylesheet" href="/detail.css" /> <!-- 自己額外的排版（可有可無） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div id="outlet" style="max-width: 900px;" class="container my-5 d-flex flex-column gap-4 px-5">
+    <!-- 這裡會由 JS 注入餐點內容 -->
+  </div>
+
+  <!-- 雪花特效：固定位置不蓋內容 -->
+  <canvas id="snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 1;"></canvas>
+
+  <!-- JS -->
+  <script type="module" src="/scripts/detail.js"></script>
+  <script src="/scripts/snow.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/mouse-firework@latest/dist/index.umd.js"></script>
+<script>
+  firework({
+    excludeElements: ["a", "button"],
+    particles: [
+      {
+        shape: "circle",
+        move: "emit",
+        easing: "easeOutExpo",
+        colors: [
+          "rgba(255,182,185,0.9)",
+          "rgba(250,227,217,0.9)",
+          "rgba(187,222,214,0.9)",
+          "rgba(138,198,209,0.9)"
+        ],
+        number: 30,
+        duration: [1200, 1800],
+        shapeOptions: {
+          radius: [16, 32]
+        }
+      }
+    ]
+  });
+</script>
+
+</body>
+
+</html>

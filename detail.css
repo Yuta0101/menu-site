@@ -5,3 +5,29 @@ body{
 /* font-family: 'indie flower'!important; */
 font-family: 'Merienda'!important;
 }
+
+/* 修正 home.gif 在 detail 頁面的位置與尺寸 */
+.home-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-link img {
+  position: static;
+  width: 70px;
+  height: auto;
+  margin-right: 8px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .home-link img {
+    width: 48px;
+    margin-right: 4px;
+  }
+  .home-link {
+    gap: 6px;
+  }
+}

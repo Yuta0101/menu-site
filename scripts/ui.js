@@ -1,55 +1,58 @@
 import { buttonData } from "./constant.js";
 
 const buttonArea = document.getElementById("buttons");
-//Ekrana menü elemanlarını basar
-export function renderMenuItems(menuItems, menuList) {
-  //Dizideki her bir eleman için bir menü HTMLi
-  // oluşturup ekrana basar
-  menuList.innerHTML = menuItems
-  .map(
-      (item) =>
-        `
-        <a id="item-${item.id}" href="detail.html?id=${item.id}" class="d-flex flex-column flex-md-row text-decoration-none text-dark gap-3">
-       <img class="rounded shadow img-fluid" src="${item.img}" style="width: 190px; height: 150px; object-fit: cover;" />
-          <div class="flex-grow-1">
-            <div class="d-flex align-items-start">
-              <div class="flex-grow-1">
-                <h5>${item.title}</h5>
-              </div>
-              <div style="min-width: 80px; font-size: 25px;" class="text-success fw-bold text-end">
-              ${item.price}&nbsp;NT</div>
-            </div>
-            <p class="lead">
-              ${item.desc.slice(0, 80) + "..."}
-            </p>
-          </div>
-        </a>
-        `
-    )
-    .join(" ");
+
+// 定義分類顯示順序與標題
+const categoryOrder = [
+  { value: "套餐", label: "套餐（飲料可更換）" },
+  { value: "飯麵", label: "飯麵" },
+  { value: "蛋餅 蔥抓餅", label: "蛋餅 蔥抓餅" },
+  { value: "手工饅頭", label: "手工饅頭" },
+  { value: "其他", label: "其他" },
+  { value: "飲料", label: "飲料" }
+];
+
+// 細長條型卡片樣式
+function renderLongCard(item) {
+  return `
+    <a href="detail.html?id=${item.id}" class="menu-long-card-link" style="text-decoration:none;color:inherit;">
+      <div class="menu-long-card d-flex align-items-center gap-3 mb-2 p-2 shadow-sm rounded bg-white flex-wrap">
+        <img src="${item.img}" alt="${item.title}" loading="lazy">
+        <div class="flex-grow-1">
+          <div class="fw-bold">${item.title}</div>
+          <div class="text-muted small">${item.desc ? item.desc.slice(0, 40) : ""}</div>
+        </div>
+        <div class="text-success fw-bold" style="min-width:60px;">${item.price}元</div>
+      </div>
+    </a>
+  `;
 }
+
+// 依分類分區塊顯示
+export function renderMenuItems(menuItems, menuList) {
+  let html = "";
+  categoryOrder.forEach(cat => {
+    const items = menuItems.filter(i => i.category === cat.value);
+    if (items.length > 0) {
+      html += `<h3 class="mt-4 mb-2">${cat.label}</h3>`;
+      html += items.map(renderLongCard).join("");
+    }
+  });
+  menuList.innerHTML = html;
+}
+
 //Ekrana butonları basar
 export function renderButtons(activeText) {
-    //Eski eklenen butonları temizle
     buttonArea.innerHTML = ''
-  //yeni butonları oluşturma
-  buttonData.forEach((btn) => {
-    //Button elementi oluşturma
-    const buttonEle = document.createElement("button");
-    //class belirleme
-    buttonEle.className = "btn btn-outline-dark";
-
-    //data-id belirleme
-    buttonEle.dataset.category = btn.value;
-
-    //Eğer eleman aktifse bu class ı ver
-    if(btn.text === activeText){
-        buttonEle.classList.add('btn-dark', 'text-white');
-    }
-    //İçindeki yazıyı belirleme
-    buttonEle.innerText = btn.text;
-    //butonu html'e gönderme
-    buttonArea.appendChild(buttonEle);
-  });
+    buttonData.forEach((btn) => {
+      const buttonEle = document.createElement("button");
+      buttonEle.className = "btn btn-outline-dark";
+      buttonEle.dataset.category = btn.value;
+      if(btn.text === activeText){
+          buttonEle.classList.add('btn-dark', 'text-white');
+      }
+      buttonEle.innerText = btn.text;
+      buttonArea.appendChild(buttonEle);
+    });
 }
 

@@ -21,19 +21,18 @@ const outlet = document.querySelector("#outlet")
 function renderPage(product){
     console.log(product)
    outlet.innerHTML = `
-   <div class="d-flex justify-content-between fs-5">
-       <div style="position: relative;">
+   <div class="d-flex justify-content-between fs-5 align-items-center flex-wrap">
+       <div class="home-link">
          <a href="index.html">
-          <img src="/images/home.gif" alt="回首頁" style="position: absolute; top: 30; left: 40; width: 85px;">
+          <img src="images/home.gif" alt="回首頁">
          </a>
        </div>
-        <div>主頁/${product.category}/${product.title.toLowerCase()}</div>
+        <div style="word-break: break-all;">主頁/${product.category}/${product.title.toLowerCase()}</div>
     </div>
     <h1 class="text-center my-3 shadow rounded p-2">${product.title}</h1>
     <img src="${product.img}" class="rounded object-fit-cover shadow-lg" style="max-height: 400px">
 
     <h3 class="my-2">價格：<span class="text-success">NT$${product.price}</span></h3>
-
 
     <p class="lead fs-3">
    ${product.desc}

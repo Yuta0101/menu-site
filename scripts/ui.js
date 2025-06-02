@@ -14,6 +14,18 @@ const categoryOrder = [
 
 // 細長條型卡片樣式
 function renderLongCard(item) {
+  let priceHtml = "";
+  // 飯麵類（有 priceSmall/priceLarge）
+  if (item.priceSmall && item.priceLarge) {
+    priceHtml = `<span class="text-success fw-bold">${item.priceSmall}元 / 大：${item.priceLarge}元</span>`;
+  // 飲料類（有 price 和 priceLarge）
+  } else if (item.price !== undefined && item.priceLarge) {
+    priceHtml = `<span class="text-success fw-bold">${item.price}元 / 大：${item.priceLarge}元</span>`;
+  } else if (item.pricePlusEgg) {
+    priceHtml = `<span class="text-success fw-bold">${item.price}元</span> <span class="text-danger ms-2">加蛋${item.pricePlusEgg}元</span>`;
+  } else {
+    priceHtml = `<span class="text-success fw-bold">${item.price}元</span>`;
+  }
   return `
     <a href="detail.html?id=${item.id}" class="menu-long-card-link" style="text-decoration:none;color:inherit;">
       <div class="menu-long-card d-flex align-items-center gap-3 mb-2 p-2 shadow-sm rounded bg-white flex-wrap">
@@ -22,7 +34,7 @@ function renderLongCard(item) {
           <div class="fw-bold">${item.title}</div>
           <div class="text-muted small">${item.desc ? item.desc.slice(0, 40) : ""}</div>
         </div>
-        <div class="text-success fw-bold" style="min-width:60px;">${item.price}元</div>
+        <div style="min-width:100px;">${priceHtml}</div>
       </div>
     </a>
   `;

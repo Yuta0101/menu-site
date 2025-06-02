@@ -19,7 +19,12 @@ const outlet = document.querySelector("#outlet")
 
 //Bütün arayüzü ekrana basar
 function renderPage(product){
-    console.log(product)
+    let priceHtml = "";
+    if (product.priceSmall && product.priceLarge) {
+      priceHtml = `小：<span class="text-success">NT$${product.priceSmall}</span> / 大：<span class="text-success">NT$${product.priceLarge}</span>`;
+    } else {
+      priceHtml = `<span class="text-success">NT$${product.price}</span>`;
+    }
    outlet.innerHTML = `
    <div class="d-flex justify-content-between fs-5 align-items-center flex-wrap">
        <div class="home-link">
@@ -32,7 +37,7 @@ function renderPage(product){
     <h1 class="text-center my-3 shadow rounded p-2">${product.title}</h1>
     <img src="${product.img}" class="rounded object-fit-cover shadow-lg" style="max-height: 400px">
 
-    <h3 class="my-2">價格：<span class="text-success">NT$${product.price}</span></h3>
+    <h3 class="my-2">價格：${priceHtml}</h3>
 
     <p class="lead fs-3">
    ${product.desc}

@@ -202,13 +202,14 @@ body {
 @media (max-width: 600px) {
   .menu-long-card {
     align-items: center;
-    width: 100%;
-    min-height: unset;
-    padding: 6px 4px;
+    width: 98vw;         /* 卡片變寬 */
+    max-width: 100vw;
+    min-width: 0;
+    padding: 6px 2vw;    /* 兩側留一點空間 */
     gap: 8px;
   }
   .menu-long-card img {
-    width: 100px;
+    width: 100px;        /* 保持原本圖片大小 */
     height: 80px;
     margin-bottom: 0;
   }
@@ -273,3 +274,4 @@ body {
     font-size: 1.08rem;
   }
 }
+

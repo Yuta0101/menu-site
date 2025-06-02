@@ -2,7 +2,7 @@
     "menu": [
         {
             "id": 1,
-            "title": "三星蔥＋荷包蛋＋紅茶",
+            "title": "三星蔥＋荷包蛋＋紅茶     ",
             "price": 60,
             "category": "套餐",
             "img": "./images/Vg1.gif",
@@ -159,6 +159,579 @@
             "price": 22.99,
             "img": "./images/item-10.jpeg",
             "desc": "Bizon etinin eşsiz lezzeti, özel baharatlar ve soslarla birleşiyor. Bizon Bifteği, akşam yemeğiniz için mükemmel bir seçim!"
-        }
+        },
+        {
+            "id": 101,
+            "title": "炒麵",
+            "category": "飯麵",
+            "priceSmall": 35,
+            "priceLarge": 45,
+            "img": "./images/item-2.jpeg",
+            "desc": "經典炒麵，份量可選"
+        },
+        {
+            "id": 102,
+            "title": "炒冬粉",
+            "category": "飯麵",
+            "priceSmall": 35,
+            "priceLarge": 45,
+            "img": "./images/item-2.jpeg",
+            "desc": "經典炒冬粉，份量可選"
+        },
+        {
+            "id": 103,
+            "title": "大陽麵線",
+            "category": "飯麵",
+            "priceSmall": 40,
+            "priceLarge": 55,
+            "img": "./images/item-2.jpeg",
+            "desc": "大陽麵線，份量可選"
+        },
+        {
+            "id": 104,
+            "title": "油麵（湯/乾）",
+            "category": "飯麵",
+            "priceSmall": 60,
+            "priceLarge": 70,
+            "img": "./images/item-2.jpeg",
+            "desc": "油麵，湯或乾，份量可選"
+        },
+        {
+            "id": 105,
+            "title": "陽春麵（湯/乾）",
+            "category": "飯麵",
+            "priceSmall": 60,
+            "priceLarge": 70,
+            "img": "./images/item-2.jpeg",
+            "desc": "陽春麵，湯或乾，份量可選"
+        },
+        {
+            "id": 201,
+            "title": "三星蔥抓餅",
+            "category": "其他",
+            "price": 40,
+            "pricePlusEgg": 50,
+            "img": "./images/item-2.jpeg",
+            "desc": "三星蔥抓餅，可加蛋"
+        },
+        {
+            "id": 202,
+            "title": "蔥肉抓餅",
+            "category": "其他",
+            "price": 40,
+            "pricePlusEgg": 50,
+            "img": "./images/item-2.jpeg",
+            "desc": "蔥肉抓餅，可加蛋"
+        },
+        {
+            "id": 203,
+            "title": "蘿蔔糕",
+            "category": "其他",
+            "price": 30,
+            "pricePlusEgg": 40,
+            "img": "./images/item-2.jpeg",
+            "desc": "蘿蔔糕，可加蛋"
+        },
+        {
+            "id": 204,
+            "title": "蘿蔔糕玉米蛋",
+            "category": "其他",
+            "price": 50,
+            "img": "./images/item-2.jpeg",
+            "desc": "蘿蔔糕加玉米蛋"
+        },
+        {
+            "id": 205,
+            "title": "鮮包洋蔥水餃10個",
+            "category": "其他",
+            "price": 70,
+            "img": "./images/item-2.jpeg",
+            "desc": "鮮包洋蔥水餃10個"
+        },
+        {
+            "id": 206,
+            "title": "鮮包洋蔥煎餃10個",
+            "category": "其他",
+            "price": 90,
+            "img": "./images/item-2.jpeg",
+            "desc": "鮮包洋蔥煎餃10個"
+        },
+        {
+            "id": 207,
+            "title": "鮮包鍋貼5個",
+            "category": "其他",
+            "price": 45,
+            "img": "./images/item-2.jpeg",
+            "desc": "鮮包鍋貼5個"
+        },
+        {
+            "id": 208,
+            "title": "肉燥飯",
+            "category": "其他",
+            "price": 30,
+            "img": "./images/item-2.jpeg",
+            "desc": "肉燥飯"
+        },
+        {
+            "id": 209,
+            "title": "包子（肉/芋頭）",
+            "category": "其他",
+            "price": 15,
+            "img": "./images/item-2.jpeg",
+            "desc": "包子（肉/芋頭）"
+        },
+        {
+            "id": 210,
+            "title": "蔥蛋",
+            "category": "其他",
+            "price": 15,
+            "img": "./images/item-2.jpeg",
+            "desc": "蔥蛋"
+        },
+        {
+            "id": 211,
+            "title": "荷包蛋",
+            "category": "其他",
+            "price": 10,
+            "img": "./images/item-2.jpeg",
+            "desc": "荷包蛋"
+        },
+        {
+            "id": 212,
+            "title": "豬血湯",
+            "category": "其他",
+            "price": 30,
+            "img": "./images/item-2.jpeg",
+            "desc": "豬血湯"
+        },
+        {
+            "id": 213,
+            "title": "貢丸湯",
+            "category": "其他",
+            "price": 30,
+            "img": "./images/item-2.jpeg",
+            "desc": "貢丸湯"
+        },
+        {
+            "id": 214,
+            "title": "味噌豆腐湯",
+            "category": "其他",
+            "price": 30,
+            "img": "./images/item-2.jpeg",
+            "desc": "味噌豆腐湯"
+        },
+    {
+    "id": 301,
+    "title": "原味蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 20,
+    "pricePlusEgg": 30,
+    "img": "./images/item-2.jpeg",
+    "desc": "原味蛋餅，可加蛋"
+},
+{
+    "id": 302,
+    "title": "玉米蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 30,
+    "img": "./images/item-2.jpeg",
+    "desc": "玉米蛋餅"
+},
+{
+    "id": 303,
+    "title": "肉鬆蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "肉鬆蛋餅"
+},
+{
+    "id": 304,
+    "title": "起司蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 30,
+    "img": "./images/item-2.jpeg",
+    "desc": "起司蛋餅"
+},
+{
+    "id": 305,
+    "title": "火腿蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "火腿蛋餅"
+},
+{
+    "id": 306,
+    "title": "培根蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "培根蛋餅"
+},
+{
+    "id": 307,
+    "title": "豬排蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 45,
+    "img": "./images/item-2.jpeg",
+    "desc": "豬排蛋餅"
+},
+{
+    "id": 308,
+    "title": "包麵蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "包麵蛋餅"
+},
+{
+    "id": 309,
+    "title": "包冬粉蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "包冬粉蛋餅"
+},
+{
+    "id": 310,
+    "title": "包肉粽蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "包肉粽蛋餅"
+},
+{
+    "id": 311,
+    "title": "包肉粽+玉米蛋餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 60,
+    "img": "./images/item-2.jpeg",
+    "desc": "包肉粽+玉米蛋餅"
+},
+{
+    "id": 314,
+    "title": "蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 30,
+    "pricePlusEgg": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "蔥抓餅，可加蛋"
+},
+{
+    "id": 315,
+    "title": "玉米蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "玉米蔥抓餅"
+},
+{
+    "id": 316,
+    "title": "肉鬆蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "肉鬆蔥抓餅"
+},
+{
+    "id": 317,
+    "title": "起司蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "起司蔥抓餅"
+},
+{
+    "id": 318,
+    "title": "火腿蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "火腿蔥抓餅"
+},
+{
+    "id": 319,
+    "title": "培根蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "培根蔥抓餅"
+},
+{
+    "id": 320,
+    "title": "豬排蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 65,
+    "img": "./images/item-2.jpeg",
+    "desc": "豬排蔥抓餅"
+},
+{
+    "id": 321,
+    "title": "包麵蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "包麵蔥抓餅"
+},
+{
+    "id": 322,
+    "title": "包冬粉蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "包冬粉蔥抓餅"
+},
+{
+    "id": 323,
+    "title": "包肉粽蔥抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 70,
+    "img": "./images/item-2.jpeg",
+    "desc": "包肉粽蔥抓餅"
+},
+{
+    "id": 324,
+    "title": "翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 30,
+    "pricePlusEgg": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "翡翠抓餅，可加蛋"
+},
+{
+    "id": 325,
+    "title": "玉米翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "玉米翡翠抓餅"
+},
+{
+    "id": 326,
+    "title": "肉鬆翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "肉鬆翡翠抓餅"
+},
+{
+    "id": 327,
+    "title": "起司翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 50,
+    "img": "./images/item-2.jpeg",
+    "desc": "起司翡翠抓餅"
+},
+{
+    "id": 328,
+    "title": "火腿翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "火腿翡翠抓餅"
+},
+{
+    "id": 329,
+    "title": "培根翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "培根翡翠抓餅"
+},
+{
+    "id": 330,
+    "title": "豬排翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 65,
+    "img": "./images/item-2.jpeg",
+    "desc": "豬排翡翠抓餅"
+},
+{
+    "id": 331,
+    "title": "包麵翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "包麵翡翠抓餅"
+},
+{
+    "id": 332,
+    "title": "包冬粉翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "包冬粉翡翠抓餅"
+},
+{
+    "id": 333,
+    "title": "包肉粽翡翠抓餅",
+    "category": "蛋餅 蔥抓餅",
+    "price": 70,
+    "img": "./images/item-2.jpeg",
+    "desc": "包肉粽翡翠抓餅"
+},
+{
+    "id": 401,
+    "title": "原味手工饅頭",
+    "category": "手工饅頭",
+    "price": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "原味手工饅頭"
+},
+{
+    "id": 402,
+    "title": "手工饅頭+蛋",
+    "category": "手工饅頭",
+    "price": 30,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+蛋"
+},
+{
+    "id": 403,
+    "title": "手工饅頭+蔥蛋",
+    "category": "手工饅頭",
+    "price": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+蔥蛋"
+},
+{
+    "id": 404,
+    "title": "手工饅頭+起司蛋",
+    "category": "手工饅頭",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+起司蛋"
+},
+{
+    "id": 405,
+    "title": "手工饅頭+玉米蛋",
+    "category": "手工饅頭",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+玉米蛋"
+},
+{
+    "id": 406,
+    "title": "手工饅頭+肉鬆蛋",
+    "category": "手工饅頭",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+肉鬆蛋"
+},
+{
+    "id": 407,
+    "title": "手工饅頭+火腿蛋",
+    "category": "手工饅頭",
+    "price": 40,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+火腿蛋"
+},
+{
+    "id": 408,
+    "title": "手工饅頭+培根蛋",
+    "category": "手工饅頭",
+    "price": 45,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+培根蛋"
+},
+{
+    "id": 409,
+    "title": "手工饅頭+豬排蛋",
+    "category": "手工饅頭",
+    "price": 55,
+    "img": "./images/item-2.jpeg",
+    "desc": "手工饅頭+豬排蛋"
+},
+{
+    "id": 501,
+    "title": "紅茶",
+    "category": "飲料",
+    "price": 10,
+    "priceLarge": 15,
+    "img": "./images/item-2.jpeg",
+    "desc": "紅茶 冰/溫"
+},
+{
+    "id": 502,
+    "title": "綠茶",
+    "category": "飲料",
+    "price": 10,
+    "priceLarge": 15,
+    "img": "./images/item-2.jpeg",
+    "desc": "綠茶 冰/溫"
+},
+{
+    "id": 503,
+    "title": "奶茶",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "奶茶 冰/溫"
+},
+{
+    "id": 504,
+    "title": "奶綠",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "奶綠 冰/溫"
+},
+{
+    "id": 505,
+    "title": "豆漿",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "豆漿 冰/溫"
+},
+{
+    "id": 506,
+    "title": "米漿",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "米漿 冰/溫"
+},
+{
+    "id": 507,
+    "title": "豆米漿",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "豆米漿 冰/溫"
+},
+{
+    "id": 508,
+    "title": "豆漿紅茶",
+    "category": "飲料",
+    "price": 15,
+    "priceLarge": 20,
+    "img": "./images/item-2.jpeg",
+    "desc": "豆漿紅茶 冰/溫"
+},
+{
+    "id": 509,
+    "title": "鮮奶茶",
+    "category": "飲料",
+    "price": 25,
+    "priceLarge": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "鮮奶茶 冰/溫"
+},
+{
+    "id": 510,
+    "title": "鮮奶綠",
+    "category": "飲料",
+    "price": 25,
+    "priceLarge": 35,
+    "img": "./images/item-2.jpeg",
+    "desc": "鮮奶綠 冰/溫"
+}
     ]
 }
